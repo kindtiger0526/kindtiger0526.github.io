@@ -1,7 +1,9 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const siteNav = document.querySelector('#site-nav');
+(() => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const siteNav = document.querySelector('#site-nav');
 
-if (menuToggle && siteNav) {
+  if (!menuToggle || !siteNav) return;
+
   menuToggle.addEventListener('click', () => {
     const isOpen = siteNav.classList.toggle('is-open');
     menuToggle.setAttribute('aria-expanded', String(isOpen));
@@ -13,4 +15,4 @@ if (menuToggle && siteNav) {
       menuToggle.setAttribute('aria-expanded', 'false');
     }
   });
-}
+})();
