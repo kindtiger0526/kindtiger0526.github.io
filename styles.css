@@ -49,7 +49,7 @@ h3 { line-height: 1.15; }
 .hero-note p { margin: 0; }
 .note-line { width: 4.5rem; height: 1px; background: var(--accent); }
 .section-grid { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 3rem; padding: 7rem 0; border-bottom: 1px solid var(--line); }
-.section-label { display: flex; flex-direction: column; gap: .2rem; color: var(--muted); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; }
+.section-label { display: flex; flex-direction: column; gap: .2rem; color: var(--muted); font-size: 1rem; letter-spacing: .12em; text-transform: uppercase; }
 .section-label span:first-child { color: var(--accent); }
 .section-content { min-width: 0; }
 .lead { max-width: 42rem; color: var(--muted); font-size: 1.12rem; }
@@ -108,11 +108,12 @@ h3 { line-height: 1.15; }
 .touch-controls > div button:nth-child(3) { grid-column: 3; grid-row: 1; }
 .game-help { margin: 0; color: var(--muted); font-size: .72rem; }
 .contact-section { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 3rem; padding: 7rem 0; }
-.contact-content h2 { max-width: 28rem; }
+.contact-content h2 { max-width: 44rem; word-break: keep-all; }
 .contact-links { display: grid; gap: .65rem; margin-top: 2.5rem; }
 .contact-links a { color: var(--accent-2); font-size: 1.05rem; text-decoration: none; }
 .contact-links a:hover, .contact-links a:focus-visible { text-decoration: underline; }
-.pending-link { color: var(--muted); font-size: .82rem; }
+.pending-link { color: var(--muted); font-size: .82rem; text-decoration: none; }
+.pending-link:hover, .pending-link:focus-visible { color: var(--accent-2); text-decoration: underline; }
 .site-footer { display: flex; width: min(100% - 3rem, var(--max)); justify-content: space-between; gap: 1rem; margin: 0 auto; padding: 2rem 0 3rem; color: var(--muted); font-size: .72rem; }
 
 @media (max-width: 850px) {
